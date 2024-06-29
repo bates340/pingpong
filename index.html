@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mainMenu">
+        <h1>Ping Pong</h1>
+        <button id="startGame">Oyuna Başla</button>
+        <button id="options">Seçenekler</button>
+    </div>
+
+    <div id="difficultyMenu" style="display: none;">
+        <h2>Zorluk Seviyesi</h2>
+        <button id="easy">Kolay</button>
+        <button id="medium">Orta</button>
+        <button id="hard">Zor</button>
+        <button class="back">Geri</button>
+    </div>
+
+    <div id="optionsMenu" style="display: none;">
+        <h2>Seçenekler</h2>
+        <label for="volumeSlider">Ses Seviyesi:</label>
+        <input type="range" id="volumeSlider" min="0" max="100" value="50">
+        <div>
+            <label for="paddle1Color">Sol Oyuncu Rengi:</label>
+            <input type="color" id="paddle1Color" value="#000000">
+        </div>
+        <div>
+            <label for="paddle2Color">Sağ Oyuncu Rengi:</label>
+            <input type="color" id="paddle2Color" value="#000000">
+        </div>
+        <div>
+            <label for="nightMode">Gece Modu:</label>
+            <input type="checkbox" id="nightMode">
+        </div>
+        <button class="back">Geri</button>
+    </div>
+
+    <div id="gameCanvas" style="display: none;">
+        <canvas width="300" height="200"></canvas>
+        <button id="pauseButton">Duraklat</button>
+        <button id="quitButton">Çıkış</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

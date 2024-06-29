@@ -1,0 +1,151 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+}
+
+body.night-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+#mainMenu, #difficultyMenu, #optionsMenu, #gameCanvas {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.night-mode #mainMenu, 
+.night-mode #difficultyMenu, 
+.night-mode #optionsMenu, 
+.night-mode #gameCanvas {
+  background-color: #333;
+  color: #fff;
+}
+
+.night-mode html {
+  background-color: #111;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.night-mode h1,
+.night-mode h2 {
+  color: #fff;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.back {
+  background-color: #f44336;
+}
+
+.back:hover {
+  background-color: #da190b;
+}
+
+#volumeSlider {
+  width: 200px;
+  margin: 20px 0;
+}
+
+canvas {
+  border: 1px solid #000;
+  background-color: #FFFDD0;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.night-mode canvas {
+  background-color: #FFFDD0;
+  border-color: #fff;
+}
+
+#pauseButton, #quitButton {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+#pauseButton {
+  background-color: #2196F3;
+}
+
+#pauseButton:hover {
+  background-color: #0b7dda;
+}
+
+#quitButton {
+  background-color: #f44336;
+}
+
+#quitButton:hover {
+  background-color: #da190b;
+}
+
+input[type="color"] {
+  margin: 10px;
+}
+
+#gameOverScreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: #000;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+#gameOverScreen button {
+  margin: 10px;
+}
+
+.night-mode #gameOverScreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.night-mode #gameOverScreen h2 {color: rgb(0, 0, 0);}
